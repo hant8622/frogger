@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+
+    <title>Frogger</title>
+   
+    <script defer src="main.js"></script>
+ </head>
+  
+ <body class='index-body'>
+   <div class="center-container">
+     <div class="header">
+       <h1>Frogger</h1>
+       <a href='instructions.html'>Instructions</a>
+     </div>
+   </div>
+     
+   <div class="center-container">
+     <svg id="svgCanvas" width="600" height="600">
+       <image id="BG" href="../frogger/assets/background.png" width="600" height="600"/>
+       <text id="SCORE" x="10" y="30" style="fill: white; font-family:Verdana, sans-serif; font-size: 30px">SCORE: 0</text>
+       <text id="HIGHSCORE" x="300" y="30" style="fill: white; font-family:Verdana, sans-serif; font-size: 30px">HIGHSCORE: 0</text>
+       <image id="FILLED0" href="../frogger/assets/frog.png" x="21" y="51" width="40" height="42" visibility="hidden"/>
+       <image id="FILLED1" href="../frogger/assets/frog.png" x="150" y="51" width="40" height="42" visibility="hidden"/>
+       <image id="FILLED2" href="../frogger/assets/frog.png" x="279" y="51" width="40" height="42" visibility="hidden"/>
+       <image id="FILLED3" href="../frogger/assets/frog.png" x="408" y="51" width="40" height="42" visibility="hidden"/>
+       <image id="FILLED4" href="../frogger/assets/frog.png" x="537" y="51" width="40" height="42" visibility="hidden"/>
+     </svg>
+   </div>
+   
+   <div class="center-container">
+     <h2>Controls:</h2>
+     <table class="center-table">
+       <tr><td>Move Left</td><td><div id="KeyA" class="key">&#65;</div></td></tr>
+       <tr><td>Move Right</td><td><div id="KeyD" class="key">&#68;</div></td></tr>
+       <tr><td>Move Up</td><td><div id="KeyW" class="key">&#87;</div></td></tr>
+       <tr><td>Move Down</td><td><div id="KeyS" class="key">&#83;</div></td></tr>
+       <tr><td>Reset</td><td><div id="Enter" class="key">ENTER</div></td></tr>
+     </table>
+   </div>
+ </body>
+</html>
